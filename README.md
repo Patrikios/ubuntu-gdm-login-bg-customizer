@@ -4,11 +4,11 @@
 
 ## 0) Why this effort?
 
-Changing the **login background** on Ubuntu 24.04 sounds simple—until you try it.
-GNOME settings don’t expose it, Gnome extensions I tried didn’t work for me, and it seems that the classic “edit a CSS file” tricks no longer apply because the greeter loads assets from a **compiled theme resource** (`.gresource`).
+Changing the **login background** on Ubuntu 24.04 sounds simple - until you try it.
+GNOME settings don’t expose it, Gnome extensions I tried didn’t work for me, and it seems that the classic “edit a CSS file” trick no longer apply because the greeter loads assets from a **compiled theme resource** (`.gresource`).
 
 **This project exists to make it painless and safe:**
-- **One tiny script, one clear job:** set the login background image—no theming rabbit holes.
+- **One tiny script, one clear job:** set the login background image - no theming rabbit holes.
 - **Reversible & idempotent:** switches via `update-alternatives`, never overwrites stock files, safe to rerun.
 - **Branding control:** optionally hide or restore the Ubuntu logo with a clean `dconf` override.
 - **Polished look by default:** compact ~0.75× UI (avatar + prompt) so the greeter feels tidy and modern.
@@ -25,7 +25,7 @@ If you’ve tried extensions and settings and still can’t change the greeter, 
 - Scales the **login UI to ~0.75×** (smaller user avatar and prompt field).
 - **Optionally** hides or shows the **Ubuntu logo** on the greeter (`--hide-logo` / `--show-logo`).
 - **Optionally** sets your **user’s desktop wallpaper**, which makes the **lock screen** return to GNOME’s standard **blurred desktop** background.
-- **Idempotent**: safe to re-run; it overwrites the same resource and reuses the same update-alternatives entry — no profile pile-up.
+- **Idempotent**: safe to re-run; it overwrites the same resource and reuses the same update-alternatives entry - no profile pile-up.
 
 > The script **does not** change the GNOME theme for your user session; it only rebuilds the **GDM** theme resource and optionally sets the **user wallpaper**.
 
