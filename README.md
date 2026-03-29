@@ -4,11 +4,11 @@
 
 ## 0) Why this effort?
 
-Changing the **login background** on Ubuntu 24.04 sounds simple - until you try it.
+Changing the **login background** on Ubuntu 24.04 sounds simple, until you try it.
 GNOME settings don’t expose it, Gnome extensions I tried didn’t work for me, and it seems that the classic “edit a CSS file” trick no longer apply because the greeter loads assets from a **compiled theme resource** (`.gresource`).
 
 **This project exists to make it painless and safe:**
-- **One tiny script, one clear job:** set the login background image - no theming rabbit holes.
+- **One tiny script, one clear job:** set the login background image, no theming rabbit holes.
 - **Reversible & idempotent:** switches via `update-alternatives`, never overwrites stock files, safe to rerun.
 - **Branding control:** optionally hide or restore the Ubuntu logo with a clean `dconf` override.
 - **Polished look by default:** compact ~0.75× UI (avatar + prompt) so the greeter feels tidy and modern.
@@ -273,7 +273,7 @@ GNOME 46+ generally prefers the blurred desktop for lock. Use a shell extension 
 
 ---
 
-## 14) Appendix: Expected script header (for quick help)
+## 14) Expected script header (for quick help)
 
 Run:
 ```bash
